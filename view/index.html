@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Taller de sistemas distribuidos</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/cover.css" rel="stylesheet">
+
+    <!-- Libreria utilizada para la conexion del Socket.io -->
+    <script src="socket.io/socket.io.js"></script>
+    <!-- Librerias necesarias para el funcionamiento de la página -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="function/index.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+      
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand"> </h3>
+              <ul class="nav masthead-nav">
+                <li class="active"><a href="/">Clase #3</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="inner cover">
+            <h1 class="h1-title cover-heading">Chat a través de un Multicast</h1>
+            
+            <div class="chat-text" id="chat">
+            </div>
+
+            <div class="btn-group" role="group">
+
+              <input class="form-control" id="text-send" placeholder="Send text">
+
+              <button class="btn btn-default btn-send" id="btn-send">Enviar</button>
+              
+              <button class="btn btn-default dropdown-toggle" type="button" id="salas" data-toggle="dropdown">
+                Salas disponibles
+                <span class="caret"></span>
+              </button>
+
+              <ul class="dropdown-menu dropdown-sala" role="menu">
+                <li id="Principal"><a href="#">Sala Principal</a></li>
+                <li id="1"><a href="#">Sala 1</a></li>
+                <li id="2"><a href="#">Sala 2</a></li>
+                <li id="3"><a href="#">Sala 3</a></li>
+                <li id="4"><a href="#">Sala 4</a></li>
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+</html>
